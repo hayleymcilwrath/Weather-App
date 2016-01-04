@@ -1,0 +1,324 @@
+/* Removing margin and padding from everything. */
+
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+
+/* Basic body styling. */
+
+
+    body {
+    background: url(images/hero-image-2.svg) no-repeat center center fixed;
+    background-size: cover;
+	font: 59% "Myraid Pro" sans-serif;
+	}
+
+/* The CSS for the form. */
+
+#container{
+    padding-top: 14%;
+    float:left;
+}
+
+
+#balloon{
+    margin: 10px 10px 30px 40px;
+    width:350px;
+    float: left;
+}
+
+
+#locationForm {
+	width: 90%;
+	height: 12em;
+	max-width: 50em;
+    padding-left: 90px;
+	}
+
+#locationForm label {
+    font-family: "Myriad Pro";
+    color: #1E274C;
+	display: block;
+	font-size: 5em;
+	;
+	}
+
+#locationForm input[type="text"] {
+	display: block;
+	float: left;
+	width: 65%;
+	margin-top: 0.8em;
+	padding: 0.6em 0.8em;
+	color:black;
+	font-size: 0.6em;
+	text-align: center;
+	box-sizing: border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+	border-bottom: none;
+	
+	outline: none;
+	background: none;
+	
+	outline: none;
+	}
+
+/* This is our error style, in case someone submits the form without entering a city. */
+
+.error {
+	border: 0.15em solid rgba(204, 51, 51, 0.75) !important;	
+	}
+
+#locationForm button {
+	float:left;
+	width: 20%;
+    padding-left:20px; 
+	cursor: pointer;
+	padding: 0.45em ;
+	margin: 0.2em  4 0.2em;
+	background-color: transparent;
+    border-color: transparent;
+	font-size: 0.6em;
+	font-weight: bold;
+    opacity: 0.8;
+	
+	}
+
+#locationForm button:hover{
+
+opacity: 1.0;}
+
+#weather {
+	display: none;
+    margin: 0 auto;
+	width: 90%;
+	max-width: 90em;
+	
+    text-align: center;
+	}
+
+#weather p {
+    font-family: "Moon flower";
+	margin-top: 0.3em;
+	font-size: 3em;
+    text-align: center;
+	
+	}
+
+#locationForm button:hover {
+
+}
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes pulse { 
+    0% { -webkit-transform: scale(1); } 
+    50% { -webkit-transform: scale(2); } 
+    100% { -webkit-transform: scale(1); } 
+} 
+@keyframes pulse { 
+    0% { transform: scale(1); } 
+    50% { transform: scale(2); } 
+    100% { transform: scale(1); } 
+} 
+.pulse { 
+    -webkit-animation-name: pulse; 
+    animation-name: pulse; 
+}
+
+.animated2 { 
+ 	-webkit-animation-name: bounceIn;
+ 	-webkit-animation-duration: 4s;
+ 	-webkit-animation-iteration-count: 10;
+ 	-webkit-animation-timing-function: ease-out;
+ 	-webkit-animation-fill-mode: forwards;
+	
+ 	animation-name: bounceIn;
+ 	animation-duration: 4s;
+ 	animation-iteration-count: 10;
+ 	animation-timing-function: ease-out;
+ 	animation-fill-mode: forwards;
+} 
+
+
+
+button:focus {
+      outline: none;	
+	}
+
+
+/*this is the css for the animation for hot air balloon */
+
+
+.animated {
+ -webkit-animation-duration: 115s;
+    -moz-animation-duration: 115s;
+     -ms-animation-duration:115s;
+      -o-animation-duration: 115s;
+         animation-duration: 115s;
+ -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+     -ms-animation-fill-mode: both;
+      -o-animation-fill-mode: both;
+         animation-fill-mode: both;
+}
+ 
+@-webkit-keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+}
+
+/* fade in */ 
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/*pulse*/
+
+    
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

@@ -1,3 +1,3 @@
 # Wee Weather App
 
-[weather app](http://hayleymcilwrath.github.io/Wee-Weather-App-Reference-/)
+[weather app](http://hayleymcilwrath.github.io/Weather-App.html)
